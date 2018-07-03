@@ -12,7 +12,6 @@ app.get('/', function(request, response) {
 
 app.get('/about', middlewere.requireAuthentication, function(req, res) {
 	res.send('This is about us page');
-
 });
 
 app.use('/pub', express.static(__dirname + '/public'));
